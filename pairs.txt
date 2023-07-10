@@ -1,0 +1,18 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+int main(){
+    pair<int,string> p;
+    cout<<"Enter int p value"<<endl;
+    cin>>p.first;
+    cout<<"enter string p value "<<endl;
+    cin>>p.second;
+    cout<<p.first<<" "<<p.second;
+    cout<<endl;
+    pair<int,string> &p1 = p;
+    p1.first = 9;
+    cout<<p.first<<" "<<p.second;
+  //  cout<<p1.first<<" "<<p1.second;
+    return 0;
+}
